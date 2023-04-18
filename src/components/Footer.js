@@ -1,7 +1,7 @@
 import Linkedin from "/Users/keshav/website/src/images/linkedin.svg"
 import Github from "/Users/keshav/website/src/images/github.svg"
 import Codeforces from "/Users/keshav/website/src/images/codeforces.svg"
-
+import Spotify from "/Users/keshav/website/src/images/spotify.svg"
 
 function Footer() {
   return (
@@ -35,7 +35,7 @@ function Footer() {
               <img src={Linkedin} alt="Your SVG" class = "w-6 h-6"/>
             </a>
           </li>
-          <li>
+          {/* <li>
             <a
               href="https://devfolio.co/@aqtion"
               target = "_blank"
@@ -45,7 +45,7 @@ function Footer() {
   
               <img src="https://raw.githubusercontent.com/devfolioco/brand-assets/main/Logo/Logo.svg" alt="Your SVG" class = "w-6 h-6"/>
             </a>
-          </li>
+          </li> */}
           <li>
             <a
               href="https://codeforces.com/profile/kbadrinath"
@@ -55,6 +55,17 @@ function Footer() {
               <span class="sr-only">Codeforces</span>
   
               <img src={Codeforces} alt="Your SVG" class = "w-6 h-6"/>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://open.spotify.com/user/cvxdtaqyixs95bknsb0bq8pd7"
+              target = "_blank"
+              class="text-gray-700 transition hover:opacity-75"
+            >
+              <span class="sr-only">Spotify</span>
+  
+              <img src={Spotify} alt="Your SVG" class = "w-6 h-6"/>
             </a>
           </li>
           
