@@ -4,7 +4,7 @@ import './index.css';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Footer from './components/Footer'
-import Resume from './components/Resume'
+// import Resume from './components/Resume'
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

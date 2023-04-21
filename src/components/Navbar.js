@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from "react-router-dom"
 
 const tabs = [
-  {name: 'Home', href: '/Home', current:true, left:false},
+  {name: 'Home', href: '', current:true, left:false},
   {name: 'Resume', href: '/Resume', current:false, left:false},
 ]
 
