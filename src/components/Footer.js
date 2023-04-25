@@ -6,7 +6,7 @@ import Spotify from "/Users/keshav/website/src/images/spotify.svg"
 function Footer() {
   return (
     
-    <footer class="rounded-lg background-color: #010521">
+    <footer class="background-color: #010521">
     <div
       class="max-w-screen-xl pb-8 mx-auto space-y-8 sm:px-6 lg:space-y-16 lg:px-8"
     > 
