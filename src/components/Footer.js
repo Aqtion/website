@@ -6,9 +6,9 @@ import Spotify from "/Users/keshav/website/src/images/spotify.svg"
 function Footer() {
   return (
     
-    <footer class="rounded-lg border-2 border-slate-500 background-color: #010521">
+    <footer class="rounded-lg background-color: #010521">
     <div
-      class="max-w-screen-xl px-4 py-16 mx-auto space-y-8 sm:px-6 lg:space-y-16 lg:px-8"
+      class="max-w-screen-xl pb-8 mx-auto space-y-8 sm:px-6 lg:space-y-16 lg:px-8"
     > 
         <ul class="flex grid-cols-1 gap-6 mt-8 sm:mt-0 justify-end">
         <li class = "justify-start">
