@@ -1,26 +1,32 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import Navbar from './components/Navbar';
-import Home from './components/Home';
-import Footer from './components/Footer'
-// import Resume from './components/Resume'
-import reportWebVitals from './reportWebVitals';
+import React, { useState } from "react"
+import ReactDOM from "react-dom/client"
+import "./index.css"
+// Navbar removed per user request (we'll render inline links instead)
+import Home from "./components/Home"
+import Papershelf from "./components/Papershelf"
+import Footer from "./components/Footer"
+import reportWebVitals from "./reportWebVitals"
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <Navbar />
-    <div>
-      <Home />
-      {/* <Resume /> */}
+function App() {
+  const [tab, setTab] = useState("home")
+
+  return (
+    <div className="app-root">
+      <main>
+        {tab === "home" && <Home onNavigate={setTab} />}
+        {tab === "papershelf" && <Papershelf />}
+      </main>
+
       <Footer />
     </div>
-    
-  </React.StrictMode>
-);
+  )
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const root = ReactDOM.createRoot(document.getElementById("root"))
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+)
+
+reportWebVitals()

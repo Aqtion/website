@@ -1,46 +1,29 @@
-import React from 'react';
-import {Link} from "react-router-dom"
+import React from "react"
 
-const tabs = [
-  {name: 'Home', href: '', current:true, left:false},
-  {name: 'Resume', href: '/Resume', current:false, left:false},
-]
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+function Navbar({ activeTab = "home", onTabChange = () => {} }) {
+  return (
+    <nav className="navbar">
+      <div className="nav-inner">
+        <div className="site-title">Keshav</div>
+        <div className="tabs">
+          <button
+            className={`tab ${activeTab === "home" ? "active" : ""}`}
+            onClick={() => onTabChange("home")}
+            aria-current={activeTab === "home" ? "page" : undefined}
+          >
+            Home
+          </button>
+          <button
+            className={`tab ${activeTab === "papershelf" ? "active" : ""}`}
+            onClick={() => onTabChange("papershelf")}
+            aria-current={activeTab === "papershelf" ? "page" : undefined}
+          >
+            Papershelf
+          </button>
+        </div>
+      </div>
+    </nav>
+  )
 }
 
-function Navbar() {
-  return (
-    <nav>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-            <div className="relative flex h-16 items-center justify-between">
-              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-              </div>
-              <div className="flex flex-1 items-center justify-right sm:items-stretch sm:justify-end">
-                <div className="hidden sm:ml-6 sm:block">
-                  <div className="flex space-x-4 navbar-start">
-                    
-                    {tabs.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className={classNames(
-                          'text-white hover:text-shiny',
-                          'px-3 py-2 rounded-md text-2xl font-bold'
-                        )}
-                      >
-                        {item.name}
-                      </a>
-                    ))}
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-          </nav>
-          
-      )}
-export default Navbar;
+export default Navbar
