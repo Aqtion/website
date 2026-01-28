@@ -15,13 +15,12 @@ export default function Home() {
           Computer Science at the University of Illinois, Urbana-Champaign
         </p>
         <p className="blurb">
-          I'm an undergraduate student researcher at the University of Illinois,
-          Urbana-Champaign studying robot manipulation policy enhancement via
-          world models and generalized value functions under PhD student
-          Shivansh Patel. I'm broadly interested in problems related to robotics
-          and computer vision, but enjoy building anything and everything that I
-          find interesting and worthwhile. I'm also a member of SIGRobotics @
-          UIUC where I like to build{" "}
+          I'm an undergraduate student researcher at UIUC studying robot
+          manipulation policy enhancement via world models and generalized value
+          functions under PhD student Shivansh Patel. I'm broadly interested in
+          problems related to robotics and computer vision, but enjoy building
+          anything and everything that I find interesting and worthwhile. I'm
+          also a member of SIGRobotics @ UIUC where I like to build{" "}
           <a href="https://www.hackster.io/sigrobotics/matcha-bot-sigrobotics-embodied-ai-hackathon-1st-place-f0e520">
             cool things
           </a>
