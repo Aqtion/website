@@ -17,9 +17,9 @@ export default function Home() {
         <p className="blurb">
           I'm an undergraduate student researcher at UIUC studying robot
           manipulation policy enhancement via world models and generalized value
-          functions under PhD student Shivansh Patel. I'veI'm broadly interested
-          in problems related to robotics, deep learning, and computer vision,
-          but enjoy building anything and everything that I find interesting and
+          functions under PhD student Shivansh Patel. I'm broadly interested in
+          problems related to robotics, deep learning, and computer vision, but
+          enjoy building anything and everything that I find interesting and
           worthwhile. I'm also a member of SIGRobotics @ UIUC where I like to
           build{" "}
           <a href="https://www.hackster.io/sigrobotics/matcha-bot-sigrobotics-embodied-ai-hackathon-1st-place-f0e520">
