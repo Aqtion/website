@@ -1,6 +1,6 @@
-import React from 'react'
-import Head from 'next/head'
-import Link from 'next/link'
+import React from "react"
+import Head from "next/head"
+import Link from "next/link"
 
 export default function Home() {
   return (
@@ -9,17 +9,23 @@ export default function Home() {
         <title>Keshav — Home</title>
       </Head>
       <div className="home-content">
+        <img src="/headshot.JPG" alt="Keshav Badrinath" className="headshot" />
         <h1 className="name">Keshav Badrinath</h1>
         <p className="role">
           Computer Science at the University of Illinois, Urbana-Champaign
         </p>
         <p className="blurb">
-          I'm broadly interested in problems related to robotics, AI, and
-          computer vision, but enjoy building anything and everything that makes
-          life easier. I currently conduct world model and robot manipulation
-          policy research at UIUC under PhD student Shivansh Patel. I'm a member
-          of SIGRobotics @ UIUC where I build cool projects like a matcha making
-          robot.
+          I'm an undergraduate student researcher at the University of Illinois,
+          Urbana-Champaign studying robot manipulation policy enhancement via
+          world models and generalized value functions under PhD student
+          Shivansh Patel. I'm broadly interested in problems related to robotics
+          and computer vision, but enjoy building anything and everything that I
+          find interesting and worthwhile. I'm also a member of SIGRobotics @
+          UIUC where I like to build{" "}
+          <a href="https://www.hackster.io/sigrobotics/matcha-bot-sigrobotics-embodied-ai-hackathon-1st-place-f0e520">
+            cool things
+          </a>
+          .
         </p>
 
         <div className="links">

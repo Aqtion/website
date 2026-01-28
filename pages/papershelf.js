@@ -1,6 +1,6 @@
-import React from 'react'
-import Head from 'next/head'
-import Link from 'next/link'
+import React from "react"
+import Head from "next/head"
+import Link from "next/link"
 
 const samplePapers = [
   {
@@ -75,9 +75,7 @@ export default function Papershelf() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <article className="paper-card">
-                    {p.title}
-                  </article>
+                  <article className="paper-card">{p.title}</article>
                 </a>
               ))}
             </div>
