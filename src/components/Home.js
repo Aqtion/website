@@ -15,8 +15,10 @@ function Home({ onNavigate = () => {} }) {
         <p className="blurb">
           I'm broadly interested in problems related to robotics, AI, and
           computer vision, but enjoy building anything and everything that makes
-          life easier. I'm a member of SIGRobotics @ UIUC where I do work with
-          robotic manipulation.
+          life easier. I currently conduct world model and robot manipulation
+          policy research at UIUC under PhD student Shivansh Patel. I'm a member
+          of SIGRobotics @ UIUC where I build cool projects like a matcha making
+          robot.
         </p>
 
         <div className="links">
